@@ -1,0 +1,13 @@
+UPDATE public."ir_ui_menu" SET
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		"active" = '{{update_form.fieldState.active.isVisible ? update_form.formData.active : update_form.sourceData.active}}',
+    "sequence" = '{{update_form.fieldState.sequence.isVisible ? update_form.formData.sequence : update_form.sourceData.sequence}}',
+		"parent_id" = '{{update_form.fieldState.parent_id.isVisible ? update_form.formData.parent_id : update_form.sourceData.parent_id}}',
+		"parent_path" = '{{update_form.fieldState.parent_path.isVisible ? update_form.formData.parent_path : update_form.sourceData.parent_path}}',
+		"web_icon" = '{{update_form.fieldState.web_icon.isVisible ? update_form.formData.web_icon : update_form.sourceData.web_icon}}',
+		"action" = '{{update_form.fieldState.action.isVisible ? update_form.formData.action : update_form.sourceData.action}}',
+		"create_uid" = '{{update_form.fieldState.create_uid.isVisible ? update_form.formData.create_uid : update_form.sourceData.create_uid}}',
+		"create_date" = '{{update_form.fieldState.create_date.isVisible ? update_form.formData.create_date : update_form.sourceData.create_date}}',
+		"write_uid" = '{{update_form.fieldState.write_uid.isVisible ? update_form.formData.write_uid : update_form.sourceData.write_uid}}',
+		"write_date" = '{{update_form.fieldState.write_date.isVisible ? update_form.formData.write_date : update_form.sourceData.write_date}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

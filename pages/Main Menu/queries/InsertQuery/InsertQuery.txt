@@ -1,0 +1,26 @@
+INSERT INTO public."ir_ui_menu" (
+	"name",
+	"active",
+	"sequence",
+	"parent_id",
+	"parent_path",
+	"web_icon",
+	"action",
+	"create_uid",
+	"create_date",
+	"write_uid",
+	"write_date"
+)
+VALUES (
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.active}}',
+	'{{insert_form.formData.sequence}}',
+	'{{insert_form.formData.parent_id}}',
+	'{{insert_form.formData.parent_path}}',
+	'{{insert_form.formData.web_icon}}',
+	'{{insert_form.formData.action}}',
+	'{{insert_form.formData.create_uid}}',
+	'{{insert_form.formData.create_date}}',
+	'{{insert_form.formData.write_uid}}',
+	'{{insert_form.formData.write_date}}'
+);

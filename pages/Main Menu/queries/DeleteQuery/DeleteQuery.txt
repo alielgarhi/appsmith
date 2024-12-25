@@ -1,0 +1,2 @@
+DELETE FROM public."ir_ui_menu"
+  WHERE "id" = {{data_table.triggeredRow.id}};
